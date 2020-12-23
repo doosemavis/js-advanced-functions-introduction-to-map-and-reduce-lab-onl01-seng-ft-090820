@@ -1,22 +1,30 @@
-function mapToNegativize(arr) {
-    let newArr1 = arr.map(x => x * -1)
-    return newArr1;
-}
+// function mapToNegativize(arr) {
+//     let newArr1 = arr.map(x => x * -1)
+//     return newArr1;
+// }
 
-function mapToNoChange(arr) {
-    let newArr2 = arr.map(x => x);
-    return newArr2;
-}
+const mapToNegativize = arr => arr.map(x => x * -1)
 
-function mapToDouble(arr) {
-    let newArr3 = arr.map(x => x * 2);
-    return newArr3;
-}
+const mapToNoChange = arr => arr
 
-function mapToSquare(arr) {
-    let newArr4 = arr.map(x => x ** 2);
-    return newArr4;
-}
+const mapToDouble = arr => arr.map(x => x * 2);
+
+const mapToSquare = arr => arr.map(x => x ** 2);
+
+// function mapToNoChange(arr) {
+//     let newArr2 = arr.map(x => x);
+//     return newArr2;
+// }
+
+// function mapToDouble(arr) {
+//     let newArr3 = arr.map(x => x * 2);
+//     return newArr3;
+// }
+
+// function mapToSquare(arr) {
+//     let newArr4 = arr.map(x => x ** 2);
+//     return newArr4;
+// }
 
 function reduceToTotal(srcArr, startingPoint=0) {
     let total = startingPoint
